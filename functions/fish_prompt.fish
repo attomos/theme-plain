@@ -77,7 +77,7 @@ function fish_prompt
     set -l _time (printf '%s' (date +%H:%M:%S))
 
     # Top
-    echo -n "⋊>" $user_style$USER$normal at $host_style$__fish_prompt_hostname$normal in $bold$blue(prompt_full_pwd)$normal
+    echo -n "⋊>" $bold$blue(prompt_full_pwd)$normal
     __fish_git_prompt
     echo -n "" since $green$_date $cyan$_time$normal
 
